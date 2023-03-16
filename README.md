@@ -58,3 +58,79 @@ void main() {
 # 7. Final Variable
 
 - If you declare you variable with Final keyword, you are not going to be able to change it later because you made it final. (version?)
+
+# 8. Late Variable
+
+- You will not declare the variable but when the data comes or fetches from API, you will assign data into a variable.
+
+# 9. Constant Variable
+
+- Values that you know that it will remain the same throughout the developmenet. 
+- Need to be declared before it is sent to the app store.
+
+# 2.0 Basic Data Type
+
+```dart
+void main() {
+    String name = "nico";
+    bool alive = true;
+    int age = 12;
+    double money = 69.99;
+    // num is number that can be integer or double.
+    num x = 12;
+    x = 1.1;
+
+}
+// all of them are class. 
+
+```
+
+- String, Boolean (true or false)
+- Double
+
+# 2.1 List
+
+- List: 
+*How to create a list?*
+```dart
+void main() {
+    List<int> numbers = [1,2,3,4];
+    numbers.add(1);
+    numbers.first;
+    numbers.last;
+}
+
+// everything has a class or everything inherit from the object.
+```
+- When you make a list, try to finish with semi colon and it will change the list into a multi-line format. 
+- Collection if allows you to create a list with element that may or may not be ther. 
+```dart
+var giveMeFive = true;
+var numbers = [
+    1,
+    2,
+    3,
+    4,
+    if (giveMeFive) 5,
+    // if giveMeFive is true add 5 to the list.
+]
+```
+
+## 2.2 String interpolation
+
+
+```dart
+void main() {
+    var name = 'nico';
+    var age = 10;
+    var greeting = 'Hello everyone, my nem is $name
+    and I'm ${age + 2}';
+
+    print(greeting);
+
+}
+```
+- rules: choose double quote if you want.
+- If you use the money sign($), you have to include a variable. 
+- You can include the operation inside the curly bracket{};
+- 
